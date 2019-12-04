@@ -25,7 +25,7 @@ public class main {
 
 	public static void main(String[] args) {
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader("C:\\Advent-of-Code-2019\\Input II"));
+			BufferedReader reader = new BufferedReader(new FileReader("input"));
 			List<Integer> opcodes = Arrays.stream(reader.readLine().split(",")).map(Integer::parseInt).collect(Collectors.toList());
 			System.out.println("Part I: " + run(new ArrayList<>(opcodes)));
 			for (int noun = 0; noun <= 99; ++noun) {
